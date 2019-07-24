@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+touch ~/.pdp
+
+if [ "$1" == "-" ]; then
+    c=$(cat ~/.pdp - | pdp.py)
+else
+    c=$(echo $@ | cat ~/.pdp - | pdp.py)
+fi
+
+echo $c
+$c
