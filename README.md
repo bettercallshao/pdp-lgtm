@@ -9,6 +9,8 @@ this package provides a cli tool `pdp`, it composes commands from predefined wor
 needs tk to run, make os specific python-tk connector is installed.
 
 # example
+![demo](https://media.giphy.com/media/MFNwY4VbCfHWnxZYjp/giphy.gif)
+
 ## compose from predefined words
     echo "google.com amazon.ca host" >> ~/.pdp
     pdp
