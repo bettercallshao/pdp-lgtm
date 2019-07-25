@@ -6,6 +6,7 @@ this package provides a cli tool `pdp`, it composes commands from predefined wor
 
 # install
     pip install pdp-lgtm
+needs tk to run, make os specific python-tk connector is installed.
 
 # example
 ## compose from predefined words
