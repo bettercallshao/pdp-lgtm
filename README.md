@@ -4,6 +4,9 @@ party of dope pajamas looks good to me.
 # summary
 this package provides a cli tool `pdp`, it composes commands from predefined words and arguments
 
+# install
+    pip install pdp-lgtm
+
 # example
 ## compose from predefined words
     echo "google.com amazon.ca host" >> ~/.pdp
