@@ -10,6 +10,7 @@ setup(
     version=version,
     description="party of dope pajamas looks good to me.",
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Shaoqing Tan',
     author_email='tansq7@gmail.com',
     url='https://github.com/timlyrics/pdp-lgtm',
