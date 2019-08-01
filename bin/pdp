@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
 
-touch ~/.pdp
+DICT=~/.pdp
+HIST=~/.pdp_history
+
+touch $DICT
+touch $HIST
 
 if [ "$1" == "-" ]; then
-    c=$(cat ~/.pdp - | pdp.py)
+    c=$(cat $DICT $HIST - | pdp.py)
 else
-    c=$(echo $@ | cat ~/.pdp - | pdp.py)
+    c=$(echo $@ | cat $DICT $HIST - | pdp.py)
 fi
 
+echo $c >> $HIST
 echo $c
+echo "$(cat $HIST | tail -5)" > $HIST
 $c
