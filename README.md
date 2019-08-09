@@ -6,33 +6,32 @@ this package provides a cli tool `pdp`, it composes commands from predefined wor
 
 # install
     pip install pdp-lgtm
-needs tk to run, make os specific python-tk connector is installed.
+needs tk to run, make sure os specific python-tk connector is installed.
 
 # example
 ![demo](https://media.giphy.com/media/MFNwY4VbCfHWnxZYjp/giphy.gif)
 
-## compose from predefined words
-    echo "google.com amazon.ca host" >> ~/.pdp
-    pdp
-you can click on words in the order you would type in bash then press <Enter>, observe that that command is run.
+- run `pdp`
+- flip to git tab, press `git` then `fetch --prune`
+- press enter
 
-## compose from argument
-    pdp github.com
-you can also click on github.com now as a word.
+# configuration
 
-## compose from stdin
-    history | pdp -
+edit `~/.pdpconfig.yaml` to add tabbed sections and change width / height. config file is auto generated after first run. history is saved as `~/.pdphistory.yaml`.
 
-## adjust numbers
-    pdp expr 5 + 5
-after adding all words in arguments, press + / = / - / _ to observe the first integer word increment / decrement.
+# actions
 
-## adjust height
-    export NROWS=20
-    pdp
+- click a word to append it to the entries.
+- `enter`: print and run command.
+- `esc`: print command but don't run.
+- `backspace`: on an empty entry to remove it.
+- `tab`: on an entry to move to the next one.
+- `up`: on an entry to increment if it's an integer.
+- `down`: on an entry to decrement if it's an integer.
+- `shift` or other special keys: flip tab.
 
 # develop
-make a tag like v0.1 that matches package version
+to release make a tag like v0.1 that matches package version
 
     python3 setup.py sdist
     python3 -m twine upload dist/*

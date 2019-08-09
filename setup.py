@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-version = '0.1.1'
+version = '0.1.2'
 
 with open('README.md') as f:
     long_description = f.read()
@@ -19,8 +19,7 @@ setup(
     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
-    scripts=['bin/pdp'],
     entry_points={
-        'console_scripts': ['pdp.py=pdp_lgtm.pdp:main'],
+        'console_scripts': ['pdp=pdp_lgtm.pdp:main'],
     },
 )
