@@ -17,9 +17,8 @@ def get_history():
 
 
 def put_history(l):
-    h = get_history()
-    if l not in h:
-        h.append(l)
+    h = [a for a in get_history() if a != l]
+    h.append(l)
     h = h[-size:]
     with open(history_path, 'w') as f:
         yaml.dump(h, f, default_flow_style=False)
