@@ -60,16 +60,18 @@ class Pdp(object):
             self.nb.add(tab, text=section['name'])
 
             for l_line in section['words']:
+                l_line = l_line or []
                 row = Frame(tab)
                 row.pack(fill='x')
                 head = Button(
                     row, text='<',
-                    command=lambda ll=l_line: [self.u_word(w) for w in ll])
+                    command=lambda ll=l_line:
+                        [self.u_word(w or '') for w in ll])
                 head.pack(padx=5, side=LEFT)
                 for word in l_line:
                     item = Button(
                         row, text=word,
-                        command=lambda w=word: self.u_word(w))
+                        command=lambda w=word: self.u_word(w or ''))
                     item.pack(padx=5, side=LEFT)
 
         self.output_row = Label(self.root, bg='green')
