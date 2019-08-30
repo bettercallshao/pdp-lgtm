@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+"""History management routines."""
+
 import os
 
 import yaml

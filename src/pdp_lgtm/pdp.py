@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
+"""Tkinter UI class implementation."""
+
 import os
 import sys
-from tkinter import END, FLAT, LEFT, Button, Entry, Frame, Label, Tk, ttk
+from tkinter import END, FLAT, LEFT, Tk, Entry, Frame, Label, Button, ttk
 
 from .config import get_config
 from .history import get_history, put_history
@@ -103,7 +106,7 @@ class Pdp(object):
     def u_enter(self, event):
         command = self.process_output()
         self.root.destroy()
-        os.system(command)
+        os.system(command) # noqa
 
     def u_escape(self, event):
         self.process_output()
@@ -131,8 +134,8 @@ class Pdp(object):
             self.nb.select(self.cur_tab)
 
     def u_move(self, event):
-        idx = (self.output_items.index(event.widget) + 1) \
-            % len(self.output_items)
+        idx = ((self.output_items.index(event.widget) + 1)
+               % len(self.output_items))
         self.output_items[idx].focus_set()
         return 'break'
 
