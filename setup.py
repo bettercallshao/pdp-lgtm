@@ -1,4 +1,7 @@
-from setuptools import find_packages, setup
+# -*- coding: utf-8 -*-
+"""Setup for pdp-lgtm."""
+
+from setuptools import setup, find_packages
 
 version = '0.1.3'
 
@@ -8,7 +11,7 @@ with open('README.md') as f:
 setup(
     name='pdp-lgtm',
     version=version,
-    description="party of dope pajamas looks good to me.",
+    description='party of dope pajamas looks good to me.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Shaoqing Tan',
