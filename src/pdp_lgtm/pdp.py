@@ -13,7 +13,7 @@ config = get_config()
 
 def base_root():
     root = Tk()
-    root.title('https://github.com/timlyrics/pdp-lgtm')
+    root.title('https://github.com/bettercallshao/pdp-lgtm')
     root.option_add('*font', 'courier 12')
     root.geometry(
         '{w}x{h}+{x}+{y}'.format(
