@@ -3,7 +3,7 @@
 
 from setuptools import setup, find_packages
 
-version = '0.1.4'
+version = '0.1.5'
 
 with open('README.md') as f:
     long_description = f.read()
@@ -16,7 +16,7 @@ setup(
     long_description_content_type='text/markdown',
     author='Shaoqing Tan',
     author_email='tansq7@gmail.com',
-    url='https://github.com/timlyrics/pdp-lgtm',
+    url='https://github.com/bettercallshao/pdp-lgtm',
     license='MIT',
     packages=find_packages('src'),
     package_dir={'': 'src'},

@@ -1,5 +1,5 @@
 # pdp-lgtm
-[![CircleCI](https://circleci.com/gh/timlyrics/pdp-lgtm.svg?style=shield)](https://circleci.com/gh/timlyrics/pdp-lgtm)
+[![CircleCI](https://circleci.com/gh/bettercallshao/pdp-lgtm.svg?style=shield)](https://circleci.com/gh/bettercallshao/pdp-lgtm)
 [![PyPi](https://badge.fury.io/py/pdp-lgtm.svg)](https://badge.fury.io/py/pdp-lgtm)
 
 party of dope pajamas looks good to me.
